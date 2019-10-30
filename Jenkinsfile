@@ -25,9 +25,9 @@ pipeline {
             }
         }
         stage('Deliver') { 
-            steps {
-                 sh 'mvn App' 
-            }
+             dir('app') {
+      dockerCmd 'run -d -p 9999:9999 --name "snapshot" --network="host" automatingguy/sparktodo:SNAPSHOT .'
+    }
         }
     }
 }
