@@ -38,6 +38,15 @@ public class AppTest{
 		int result = calculator.divide(12,4);
 		assertSame(result,3);
 	}
+	@Test
+	public void checkModulo() {
+		Calculator calculator = new Calculator();
+		int result = calculator.modulo(12,8);
+		assertSame(result,4);
+	}
+	
+	
+	
 	
 	
 	
