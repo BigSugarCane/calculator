@@ -24,7 +24,13 @@ public class AppTest{
 		Calculator calculator = new Calculator();
 		int result = calculator.subtract(10,4);
 		assertSame(result,6);
-		
+	}
+	
+	@Test
+	public void checkMultiply() {
+		Calculator calculator = new Calculator();
+		int result = calculator.multiply(10,4);
+		assertSame(result,40);
 	}
 	
 	
