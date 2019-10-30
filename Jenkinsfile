@@ -25,9 +25,11 @@ pipeline {
             }
         }
         stage('Deliver') { 
-             dir('app') {
-      dockerCmd 'run -d -p 9999:9999 --name "snapshot" --network="host" automatingguy/sparktodo:SNAPSHOT .'
-    }
+            post {
+                always {
+                    echo 'I have delivered workspace'
+                }
+            }
         }
     }
 }
