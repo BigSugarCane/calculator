@@ -18,6 +18,12 @@ public class AppTest{
 		Calculator calculator = new Calculator();
 		int result = calculator.add(3,4);
 		assertSame(result,7);
+	}
+	@Test
+	public void checkSubtract() {
+		Calculator calculator = new Calculator();
+		int result = calculator.subtract(10,4);
+		assertSame(result,6);
 		
 	}
 	
