@@ -25,10 +25,10 @@ pipeline {
             }
         }
         stage('Deliver') { 
-            post {
-                always {
-                    echo 'I have delivered workspace'
-                }
+             steps {
+               
+                 sh  ' echo "I have delivered workspace" '
+                
             }
         }
     }
