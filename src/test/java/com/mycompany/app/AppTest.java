@@ -32,6 +32,12 @@ public class AppTest{
 		int result = calculator.multiply(10,4);
 		assertSame(result,40);
 	}
+	@Test
+	public void checkDivide() {
+		Calculator calculator = new Calculator();
+		int result = calculator.divide(12,4);
+		assertSame(result,3);
+	}
 	
 	
 	
